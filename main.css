@@ -1,0 +1,34 @@
+*{
+    --primary: #24343C;
+    --secondary: #496C81;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.floating-nav{
+    position: absolute;
+    background-color: var(--primary);
+    bottom: 0;
+    left: 0;
+    width: 150%;
+    height: 0%;
+    transition: all .5s;
+}
+
+.floating-nav.active{
+    height: 60%;
+    
+}
